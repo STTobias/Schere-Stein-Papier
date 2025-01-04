@@ -1,0 +1,155 @@
+/* Allgemeines Styling */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #1e1e1e; /* Dunkler Hintergrund */
+    color: #e0e0e0; /* Helle Schrift */
+    margin: 0;
+    padding: 0;
+}
+
+/* Überschrift */
+header h1 {
+    background-color: #007acc; /* Blau */
+    color: white;
+    padding: 20px;
+    margin: 0;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Bereichsüberschriften */
+p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+/* Buttons allgemein */
+button {
+    background-color: #444;
+    border: 2px solid #007acc;
+    padding: 15px 30px;
+    margin: 5px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.2s, color 0.2s, box-shadow 0.2s ease;
+}
+
+.User button:hover {
+    color: white;
+    transform: scale(1.1);
+}
+
+.User button:active {
+    transform: scale(1);
+}
+
+/* Spieler- und Computer-Buttons */
+#schere, #stein, #papier {
+    color: white;
+}
+
+#computerschere, #computerstein, #computerpapier {
+    background-color: #333;
+    color: #ccc;
+    cursor: default; /* Zeigt an, dass die Computer-Buttons nicht klickbar sind */
+    border: 2px solid #555;
+    transition: background-color 0.3s ease, border 0.3s ease, color 0.3s ease; /* Animationseffekte */
+}
+
+/* Highlight-Effekt */
+.highlight {
+    background-color: #007acc; /* Blau */
+    border: 2px solid #00cc99; /* Leichtes Grün */
+    box-shadow: 0 0 15px #00cc99; /* Glow-Effekt */
+    animation: pulse 3s ease-in-out; /* Pulsierender Glow */
+}
+
+/* Pulsierender Effekt */
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 5px #00cc99;
+    }
+    50% {
+        box-shadow: 0 0 20px #00cc99;
+    }
+    100% {
+        box-shadow: 0 0 5px #00cc99;
+    }
+}
+
+.winner {
+    background-color: green !important; /* Auffällige Farbe */
+    border: 2px solid #4CAF50 !important;
+    box-shadow: 0 0 15px #4CAF50 !important;
+}
+
+.loser {
+    background-color: red !important; /* Auffällige Farbe */
+    border: 2px solid #F44336 !important;
+    box-shadow: 0 0 15px #F44336 !important;
+}
+
+.draw {
+    color: #1e1e1e;
+    background-color: yellow !important; /* Auffällige Farbe */
+    border: 2px solid #FFEB3B !important;
+    box-shadow: 0 0 15px #FFEB3B !important;
+}
+
+/* Punktestand */
+#spielerPunktZahl {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #00cc99;
+}
+
+#computerPunktZahl {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #cc3600;
+}
+
+/* Reset-Button */
+#resetbutton {
+    background-color: #555;
+    color: #e0e0e0;
+    border: 2px solid #777;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+#resetbutton:hover {
+    background-color: #007acc;
+    color: white;
+}
+
+/* Layout-Optimierung */
+button {
+    display: inline-block;
+    margin: 10px;
+}
+
+p:first-of-type, p:nth-of-type(2) {
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+.text-winner {
+    color: #4CAF50; /* Grün für Gewinn */
+    font-weight: bold;
+}
+
+.text-loser {
+    color: #F44336; /* Rot für Verlust */
+    font-weight: bold;
+}
+
+.text-draw {
+    color: #FFEB3B; /* Gelb für Unentschieden */
+    font-weight: bold;
+}
